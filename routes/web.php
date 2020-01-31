@@ -10,10 +10,11 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/','User\Auth\LoginController@showLoginForm')->name('login');
+Route::post('/','User\Auth\LoginController@login');
+Route::get('/admin','Admin\Auth\LoginController@showLoginForm')->name('login');
+Route::post('/admin','Admin\Auth\LoginController@login');
 
-Route::get('/', function () {
-    return view('welcome');
-});
 Auth::routes([ 'verify' => true ]);
 
 

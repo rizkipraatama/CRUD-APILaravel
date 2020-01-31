@@ -21,9 +21,9 @@
             <li >
                 <a href="{{ url('user/allBook') }}"><i class="fa fa-th-large"></i> <span class="nav-label">Buku</span></a>
             </li>
-            <li >
+           <!--  <li >
                 <a href="{{ url('user/test') }}"><i class="fa fa-th-large"></i> <span class="nav-label">Ajukan Pinjaman</span> </a>
-            </li>
+            </li> -->
         </ul>
 
     </div>

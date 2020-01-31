@@ -64,8 +64,8 @@ class LoginController extends Controller
     {
         Auth::guard('users')->logout();
         return redirect()
-            ->route('login')
-            ->with('status','Admin has been logged out!');
+            ->route('')
+            ->with('status','You has been logged out!');
     }
 
     private function validator(Request $request)
